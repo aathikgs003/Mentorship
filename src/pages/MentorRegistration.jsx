@@ -4,7 +4,7 @@ import Card from "../components/Card";
 import InputField from "../components/InputField";
 import SelectField from "../components/SelectField";
 import { ACTIVE_THEME, themes } from "../theme/UITheme";
-
+import BackToDashboard from "../components/BackToDashboard";
 export default function MentorRegistration() {
   const { register, handleSubmit } = useForm();
   const styles = themes[ACTIVE_THEME] || themes[2];
@@ -43,7 +43,9 @@ export default function MentorRegistration() {
               </button>
             </div>
           </form>
+          
         </Card>
+        <BackToDashboard />
       </div>
     </div>
   );
